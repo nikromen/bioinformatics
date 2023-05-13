@@ -10,19 +10,19 @@ jobs:
 - job: copr_build
   trigger: pull_request
   targets: &id001
-  - fedora-38-x86_64
   - fedora-rawhide-x86_64
-  owner: fi-muni
+  - fedora-38-x86_64
+  owner: nikromen
   project: bioinformatics-pull-requests
 - job: copr_build
   trigger: commit
   branch: python-bioframe
   targets: *id001
-  owner: fi-muni
+  owner: nikromen
   project: bioinformatics
 - job: copr_build
   trigger: commit
   branch: __alpa_autoupdate_python-bioframe
   targets: *id001
-  owner: fi-muni
+  owner: nikromen
   project: bioinformatics-pull-requests
